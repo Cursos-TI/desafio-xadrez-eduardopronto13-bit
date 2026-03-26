@@ -6,26 +6,40 @@
 
 int main() {
     int i = 1;
-      printf("Torre\n");    //Utilizei do-while para Torre
+    int movimentoL = 1; // Inclui o script para facilitar a movimentação do cavalo
+
+    printf("Torre\n");    //Utilizei do-while para Torre
     
-    do{
+     do{
         printf("Direita\n", i);
         i++;
-    } while (i <= 5);
+     } while (i <= 5);
 
-      printf("Bispo\n");
+    printf("Bispo\n");
 
-    while(i <= 10){ //Utilizei while para Bispo
-        printf("Cima e Direita\n", i);  //Não consegui imprimir os movimentos utilizando 5 casas
+     while(i <= 10){ //Utilizei while para Bispo
+        printf("Cima\n", i);
+        printf("Direita\n", i);  //Utilizei a constante 10 para fazer o movimento completo da peça
         i++;
-    }
+     }
 
-      printf("Rainha\n"); //Utilizei for para Rainha
+    printf("Rainha\n"); //Utilizei for para Rainha
 
-    for(i=1; i <=8; i++){
+     for(i=1; i <=8; i++){
+        printf("Esquerda\n");
+     }
+
+    printf("Cavalo\n");
+
+     while(movimentoL--){
+
+        for(int i = 0; i <= 1; i++){
+            printf("Baixo\n");
+        }
+        printf("\n"); // Utilizei para dar espaço na conclusão do movimento da peça
         printf("Esquerda\n");
     }
-  return 0;
+  
 
 
     // Nível Aventureiro - Movimentação do Cavalo
