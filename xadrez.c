@@ -6,8 +6,8 @@
 
 int main() {
     int i = 1;
-      printf("Torre\n");
-
+      printf("Torre\n");    //Utilizei do-while para Torre
+    
     do{
         printf("Direita\n", i);
         i++;
@@ -15,12 +15,12 @@ int main() {
 
       printf("Bispo\n");
 
-    while(i <= 10){
-        printf("Cima e Direita\n", i);
+    while(i <= 10){ //Utilizei while para Bispo
+        printf("Cima e Direita\n", i);  //Não consegui imprimir os movimentos utilizando 5 casas
         i++;
     }
 
-      printf("Rainha\n");
+      printf("Rainha\n"); //Utilizei for para Rainha
 
     for(i=1; i <=8; i++){
         printf("Esquerda\n");
