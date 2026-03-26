@@ -20,6 +20,13 @@ int main() {
         i++;
     }
 
+      printf("Rainha\n");
+
+    for(i=1; i <=8; i++){
+        printf("Esquerda\n");
+    }
+  return 0;
+
 
     // Nível Aventureiro - Movimentação do Cavalo
     // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
